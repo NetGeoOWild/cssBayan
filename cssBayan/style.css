@@ -1,0 +1,32 @@
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9b9b9b;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
