@@ -4,8 +4,8 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #0059D9;
-    background-color: #afafaf;
+    color: #096fff;
+    background-color: #F6F6EC;
 }
 
 .container {
@@ -26,8 +26,156 @@ body {
 
 @media (min-width: 1024px) {
     .container {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 0 40px;
     }
+}
+
+.bayan {
+    padding: 100px 0;
+}
+
+.bayan__title {
+    font-size: 50px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.bayan__card-top,
+.bayan__card {
+    cursor: pointer;
+}
+
+.bayan__card {
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.bayan__card-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bayan__card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bayn__card-buttons {
+    width: 30px;
+    height: 30px;
+}
+
+.open {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.bayan__card-input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    opacity: 0;
+}
+
+.bayan__card-bottom {
+    display: none;
+    opacity: 0;
+    margin-bottom: 20px;
+}
+
+.bayan__card-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bayan__cards:hover .bayn__card-buttons .open {
+    display: block;
+}
+
+.bayan__cards:hover .bayan__card-title {
+    color: #000;
+}
+
+.bayan__card-input:checked~.bayan__card-top .bayan__card-title {
+    color: #000;
+}
+
+.bayan__card-input:checked~.bayan__card-top .bayn__card-buttons .open {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.bayan__card-input:checked~.bayan__card-bottom {
+    display: block;
+    animation: fade 1s ease forwards;
+}
+
+
+
+label[for="bayan__card-1"]:hover~.bayan__card-bottom {
+    display: block;
+    animation: fade 1s ease forwards;
+}
+
+label[for="bayan__card-1"]:hover .bayn__card-buttons .open {
+    display: block;
+    transform: rotate(45deg);
+}
+
+label[for="bayan__card-2"]:hover~.bayan__card-bottom {
+    display: block;
+    animation: fade 1s ease forwards;
+}
+
+label[for="bayan__card-2"]:hover .bayn__card-buttons .open {
+    display: block;
+    transform: rotate(45deg);
+}
+
+label[for="bayan__card-3"]:hover~.bayan__card-bottom {
+    display: block;
+    animation: fade 1s ease forwards;
+}
+
+label[for="bayan__card-3"]:hover .bayn__card-buttons .open {
+    display: block;
+    transform: rotate(45deg);
+}
+
+label[for="bayan__card-4"]:hover~.bayan__card-bottom {
+    display: block;
+    animation: fade 1s ease forwards;
+}
+
+label[for="bayan__card-4"]:hover .bayn__card-buttons .open {
+    display: block;
+    transform: rotate(45deg);
+}
+
+label[for="bayan__card-5"]:hover~.bayan__card-bottom {
+    display: block;
+    animation: fade 1s ease forwards;
+}
+
+label[for="bayan__card-5"]:hover .bayn__card-buttons .open {
+    display: block;
+    transform: rotate(45deg);
 }
