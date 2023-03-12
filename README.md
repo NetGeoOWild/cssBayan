@@ -1,1 +1,1 @@
-# cssBayan
+https://${NetGeoOWild}.github.io/cssBayan/cssBayan/index.html
